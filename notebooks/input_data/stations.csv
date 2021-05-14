@@ -1,0 +1,69 @@
+id,route,stop_code,stop_name,stop_num,lat,lon,notes
+0,KPL,WAIK,Waikanae Station,1,-40.876587,175.066213,Metlink coordinates
+1,KPL,PARA,Paraparaumu Station,1,-40.916677,175.007223,Metlink coordinates
+2,KPL,PARA,Paraparaumu Station,2,-40.916623,175.007128,Metlink coordinates
+3,KPL,PAEK,Paekakariki Station,1,-40.987216,174.954444,Metlink coordinates
+4,KPL,PAEK,Paekakariki Station,2,-40.987168,174.954377,Metlink coordinates
+5,KPL,PUKE,Pukerua Bay Station,1,-41.038014,174.886777,Metlink coordinates
+6,KPL,PLIM,Plimmerton Station,1,-41.083889,174.867259,Metlink coordinates
+7,KPL,PLIM,Plimmerton Station,2,-41.083906,174.867066,Metlink coordinates
+8,KPL,MANA,Mana Station,1,-41.09528,174.868237,Metlink coordinates
+9,KPL,MANA,Mana Station,2,-41.095284,174.868182,Metlink coordinates
+10,KPL,PARE,Paremata Station,1,-41.106315,174.866268,Metlink coordinates
+11,KPL,PORI,Porirua Station,1,-41.137575,174.843478,Metlink coordinates
+12,KPL,PORI,Porirua Station,2,-41.13757,174.843274,Metlink coordinates
+13,KPL,KENE,Kenepuru Station,1,-41.149628,174.838112,Metlink coordinates
+14,KPL,LIND,Linden Station,1,-41.15895,174.83202,Metlink coordinates
+15,KPL,TAWA,Tawa Station,1,-41.169538,174.828352,Metlink coordinates
+16,KPL,TAWA,Tawa Station,2,-41.169105,174.828352,Metlink coordinates
+17,KPL,REDW,Redwood Station,1,-41.176351,174.826964,Metlink coordinates
+18,KPL,REDW,Redwood Station,2,-41.174941,174.827138,Metlink coordinates
+19,KPL,TAKA,Takapu Road Station,1,-41.185288,174.828301,Metlink coordinates
+20,KPL,TAKA,Takapu Road Station,2,-41.185298,174.828258,Metlink coordinates
+21,KPL,WELL,Wellington Station,1,-41.278969,174.780562,Metlink coordinates
+22,HVL,UPPE,Upper Hutt Station,1,-41.126232,175.070318,Metlink coordinates
+23,HVL,WALL,Wallaceville Station,1,-41.130518,175.058815,Metlink coordinates
+24,HVL,TREN,Trentham Station,1,-41.137928,175.038233,Metlink coordinates
+25,HVL,HERE,Heretaunga Station,1,-41.142339,175.025912,Metlink coordinates
+26,HVL,SILV,Silverstream Station,1,-41.147298,175.010292,Metlink coordinates
+27,HVL,MANO,Manor Park Station,1,-41.156315,174.978929,Metlink coordinates
+28,HVL,POMA,Pomare Station,1,-41.169455,174.969721,Metlink coordinates
+29,HVL,TAIT,Taita Station,1,-41.180383,174.960841,Metlink coordinates
+30,HVL,TAIT,Taita Station,2,-41.180319,174.960668,Metlink coordinates
+31,HVL,WING,Wingate Station,1,-41.188782,174.954697,Metlink coordinates
+32,HVL,NAEN,Naenae Station,1,-41.197832,174.946162,Metlink coordinates
+33,HVL,EPUN,Epuni Station,1,-41.207506,174.930312,Metlink coordinates
+34,HVL,WATE,Waterloo Station,1,-41.213946,174.921164,Metlink coordinates
+35,HVL,WATE,Waterloo Station,2,-41.213898,174.9211,Metlink coordinates
+36,HVL,WOBU,Woburn Station,1,-41.220922,174.911335,Metlink coordinates
+37,HVL,WOBU,Woburn Station,2,-41.220833,174.911193,Metlink coordinates
+38,HVL,AVA,Ava Station,1,-41.219554,174.892006,Metlink coordinates
+39,HVL,PETO,Petone Station,1,-41.222026,174.869518,Metlink coordinates
+40,HVL,PETO,Petone Station,2,-41.221996,174.869459,Metlink coordinates
+41,HVL,NGAU,Ngauranga Station,1,-41.249038,174.813013,Metlink coordinates
+42,HVL,WELL,Wellington Station,1,-41.278969,174.780562,Metlink coordinates
+43,MEL,MELL,Melling Station,1,-41.203486,174.9054,Metlink coordinates
+44,MEL,WEST,Western Hutt Station,1,-41.21187,174.889995,Metlink coordinates
+45,MEL,PETO,Petone Station,1,-41.222026,174.869518,Metlink coordinates
+46,MEL,PETO,Petone Station,2,-41.221996,174.869459,Metlink coordinates
+47,MEL,NGAU,Ngauranga Station,1,-41.249038,174.813013,Metlink coordinates
+48,MEL,WELL,Wellington Station,1,-41.278969,174.780562,Metlink coordinates
+49,WRL,MAST,Masterton Station,1,-40.940433,175.654748,Metlink coordinates
+50,WRL,RENA,Renall Street Station,1,-40.94765,175.638408,Metlink coordinates
+51,WRL,SOLW,Solway Station,1,-40.953389,175.625518,Metlink coordinates
+52,WRL,CART,Carterton Station,1,-41.021682,175.523313,Metlink coordinates
+53,WRL,MATA,Matarawa Station,1,-41.048809,175.448736,Metlink coordinates
+54,WRL,WOOD,Woodside Station,1,-41.067362,175.401898,Metlink coordinates
+55,WRL,FEAT,Featherston Station,1,-41.113454,175.329763,Metlink coordinates
+56,WRL,MAYM,Maymorn Station,1,-41.108086,175.13409,Metlink coordinates
+57,WRL,UPPE,Upper Hutt Station,1,-41.126232,175.070318,Metlink coordinates
+58,WRL,WATE,Waterloo Station,1,-41.213946,174.921164,Metlink coordinates
+59,WRL,WATE,Waterloo Station,2,-41.213898,174.9211,Metlink coordinates
+60,WRL,PETO,Petone Station,1,-41.222026,174.869518,Metlink coordinates
+61,WRL,PETO,Petone Station,2,-41.221996,174.869459,Metlink coordinates
+62,WRL,WELL,Wellington Station,1,-41.278969,174.780562,Metlink coordinates
+63,CCL,KELB,Kelburn - Cable Car Station,1,-41.285365,174.76765,Metlink coordinates
+64,CCL,SALA,Salamanca - Cable Car Station,1,-41.285054,174.769562,Metlink coordinates
+65,CCL,TALA,Talavera - Cable Car Station,1,-41.284793,174.771285,Metlink coordinates
+66,CCL,CLIF,Clifton - Cable Car Station,1,-41.284514,174.773077,Metlink coordinates
+67,CCL,LAMB,Lambton Quay - Cable Car Station,1,-41.284212,174.775091,Metlink coordinates
