@@ -1,8 +1,8 @@
 """Walk catchment functions."""
 
-#import osmnx as ox
-#import networkx as nx
-#import matplotlib.pyplot as plt
+import osmnx as ox
+import networkx as nx
+import matplotlib.pyplot as plt
 
 
 def get_osm_walk_network(centre_point, 
