@@ -3,21 +3,19 @@
 import osmnx as ox
 import networkx as nx
 
-def trial_print(a):
-    print(a)
-
 def get_osm_walk_network(centre_point, 
                          dist=1000, 
                          snapshot_date=None, 
                          to_crs=None):
     """
-    Create a graph of walking network from OSM within some distance of 
-    some (lat, lng) point.
+    Create a walking network graph using OSM within specified distance of a
+    (lat, lng) point.
  
     Parameters
     ----------
     centre_point : tuple or list
-        the [lat, lng] centre point around which to construct the graph.
+        the [lat, lng] centre point or list of centre points ([lat,lng], 
+        [lat,lng]) around which to construct the graph.
     dist : int
         retain only those nodes within this many meters of the center of the
         graph.
@@ -69,7 +67,7 @@ def get_osm_walk_network(centre_point,
             else:
                 graphs.append(G)
  
-    #G = nx.compose_all(graphs)
+    G = nx.compose_all(graphs)
  
     if not to_crs is None:
       G = ox.project_graph(G, to_crs=to_crs)

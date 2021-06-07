@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name="osmcatch",
-    version="0.0.2",
+    version="0.0.1",
     author="Adam Lawrence",
     author_email="alaw005@gmail.com",
     description="Analyse network catchments using osmnx package",
@@ -22,7 +22,8 @@ setuptools.setup(
     ],
     packages=setuptools.find_packages(),
     install_requires = [
-        "osmnx>=1.1.1"
+        "osmnx>=1.1.1",
+        "pytest>=6.2.4",
     ],
     python_requires=">=3.6",
 )
