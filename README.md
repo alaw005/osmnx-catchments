@@ -1,4 +1,6 @@
 # OSMnx-catchments
+[![Run tests](https://github.com/alaw005/osmnx-catchments/actions/workflows/pytest.yml/badge.svg)](https://github.com/alaw005/osmnx-catchments/actions/workflows/pytest.yml)
+
 
 **OSMnx-catchments** uses [**OSMnx**](https://github.com/gboeing/osmnx) to 
 experiment with transport catchments. Initally considering walk catchments 
