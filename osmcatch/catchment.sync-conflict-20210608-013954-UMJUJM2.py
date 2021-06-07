@@ -65,7 +65,6 @@ def get_iso_bands(access_points,
     # Loop through bands from high to low
     iso_bands.sort(reverse=True)
 
-
     iso_group = []
     for iso_band in iso_bands:
  
@@ -77,13 +76,14 @@ def get_iso_bands(access_points,
                                           radius = iso_band, 
                                           distance = network_cost))
         subgraph = nx.compose_all(subgraphs)
-    
+        
         # Get gdf with edges and buffer, but first having changed to projected 
         # coordinates and then back to default to ensure correct dist results
         edges = ox.graph_to_gdfs(subgraph, nodes=False)
         buffer = ox.project_gdf(edges).buffer(iso_buffer)
         buffer = ox.project_gdf(buffer, to_latlong=True)
-        iso_group.append({'location_name': location_name,
+        
+        1232iso_group.append({'location_name': location_name,
                           'access_points': access_points,
                           'access_nodes': access_nodes,
                           'iso_band': iso_band,
