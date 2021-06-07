@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name="osmcatch",
-    version="0.0.1",
+    version="0.0.2",
     author="Adam Lawrence",
     author_email="alaw005@gmail.com",
     description="Analyse network catchments using osmnx package",
