@@ -24,6 +24,7 @@ setuptools.setup(
     install_requires = [
         "osmnx>=1.1.1",
         "pytest>=6.2.4",
+        "folium>=0.12.1",
     ],
     python_requires=">=3.6",
 )
