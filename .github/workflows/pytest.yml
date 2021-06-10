@@ -23,6 +23,9 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
+    - name: Install operating system dependencies
+      run: |
+        apt-get update && apt-get install python-gdal
     - name: Set up Python ${{ matrix.python-version }}
       uses: actions/setup-python@v2
       with:
