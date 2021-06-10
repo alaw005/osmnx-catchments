@@ -59,6 +59,7 @@ def linz_wellington_lidar_2013_14_dem_tile_names(x,
     return tiles
 
 def process_elevations_raster(G, 
+                              tiles,
                               base_path=None,
                               dem_crs=None):
 
