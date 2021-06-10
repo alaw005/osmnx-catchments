@@ -19,3 +19,9 @@ To build on Windows need to install the following
 ```
 pip install build[virtualenv]
 ```
+
+To work on Ubuntu need to install gdal in operating system before can install
+for pythong using pip
+```
+sudo apt-get update && sudo apt-get install python-gdal
+```

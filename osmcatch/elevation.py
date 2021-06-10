@@ -53,18 +53,22 @@ def linz_wellington_lidar_2013_14_dem_tile_names(x,
         tiles = [i["properties"]["tile"] for i in r_json["vectorQuery"]["layers"][str(layer)]["features"]]
     else:    
         tiles = []
-
+ 
     tiles.sort()
 
     return tiles
 
-def process_elevations_raster():
+def process_elevations_raster(G, 
+                              base_path=None,
+                              dem_crs=None):
 
     # Specify where the DRM files are located
-    base_path = "/content/drive/MyDrive/Colab Notebooks/porirua-linz-lidar-dem-2013-14/"
+    if base_path is None:
+        base_path = "/content/drive/MyDrive/Colab Notebooks/porirua-linz-lidar-dem-2013-14/"
 
     # Specify crs of the input DEM if different from project
-    dem_crs = 'epsg:2193'
+    if dem_crs is None:
+        dem_crs = 'epsg:2193'
 
     # Change project projection to match DEM data
     proj_crs = ox.settings.default_crs
