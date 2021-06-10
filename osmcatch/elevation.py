@@ -1,3 +1,5 @@
+""" NOT WORKING DUE TO DEPENDENCIES """
+
 import os
 import requests
 import rasterio
@@ -55,25 +57,25 @@ def linz_wellington_lidar_2013_14_dem_tile_names(x,
 
     return tiles
 
+def process_elevations_raster():
 
-# tiles - list of DEM tile names to download
+    # Specify where the DRM files are located
+    base_path = "/content/drive/MyDrive/Colab Notebooks/porirua-linz-lidar-dem-2013-14/"
 
-# Specify where the DRM files are located
-base_path = "/content/drive/MyDrive/Colab Notebooks/porirua-linz-lidar-dem-2013-14/"
+    # Specify crs of the input DEM if different from project
+    dem_crs = 'epsg:2193'
 
-# Specify crs of the input DEM if different from project
-dem_crs = 'epsg:2193'
+    # Change project projection to match DEM data
+    proj_crs = ox.settings.default_crs
+    G = ox.project_graph(G, dem_crs)
 
-# Change project projection to match DEM data
-proj_crs = ox.settings.default_crs
-G = ox.project_graph(G, dem_crs)
+    # Apply elevations to graph nodes and grades to edges
+    filepaths = [os.path.join(base_path, t) for t in tiles]
+    G = ox.add_node_elevations_raster(G, filepaths)
+    G = ox.add_edge_grades(G)
 
-# Apply elevations to graph nodes and grades to edges
-filepaths = [os.path.join(base_path, t) for t in tiles]
-G = ox.add_node_elevations_raster(G, filepaths)
-G = ox.add_edge_grades(G)
+    # Project back to default project
+    G = ox.project_graph(G, proj_crs)
 
-# Project back to default project
-G = ox.project_graph(G, proj_crs)
+    return G
 
-G.edges.data()

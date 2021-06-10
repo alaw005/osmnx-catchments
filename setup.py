@@ -25,6 +25,7 @@ setuptools.setup(
         "osmnx>=1.1.1",
         "pytest>=6.2.4",
         "folium>=0.12.1",
+        "rasterio",
     ],
     python_requires=">=3.6",
 )
