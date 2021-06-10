@@ -1,5 +1,6 @@
 """ NOT WORKING DUE TO DEPENDENCIES """
 
+import osmnx as ox
 import os
 import requests
 import rasterio
