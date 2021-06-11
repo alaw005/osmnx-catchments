@@ -23,6 +23,9 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
+    - name: Install operating system dependencies
+      run: |
+        sudo apt-get update && sudo apt-get install gdal-bin libgdal-dev
     - name: Set up Python ${{ matrix.python-version }}
       uses: actions/setup-python@v2
       with:

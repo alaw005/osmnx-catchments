@@ -23,7 +23,10 @@ setuptools.setup(
     packages=setuptools.find_packages(),
     install_requires = [
         "osmnx>=1.1.1",
-        "pytest>=6.2.4",
+        "folium>=0.12.1",
+        "scikit-learn>=0.22",
+        "gdal>=3.2.0",
+        "rasterio>=1.2.4",
     ],
     python_requires=">=3.6",
 )

@@ -12,6 +12,14 @@ Constructing, Analyzing, and Visualizing Complex Street Networks]
 *Computers, Environment and Urban Systems* 65, 126-139. 
 doi:10.1016/j.compenvurbsys.2017.05.004
 
+## Run tests
+
+Run the following in Python terminal from project root directory  to execute 
+tests.
+
+```
+pytest
+```
 
 ## Build package
 
@@ -19,3 +27,6 @@ To build on Windows need to install the following
 ```
 pip install build[virtualenv]
 ```
+
+Can run using Docker base image here 
+[jupyter-gdal](https://hub.docker.com/repository/docker/alaw005/jupyter-gdal)
