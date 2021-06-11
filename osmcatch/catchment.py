@@ -17,14 +17,15 @@ def get_iso_bands(access_points,
  
     Parameters
     ----------
-    location_name : string
-        the name of the location, for reference only
     access_points : list 
-        the [lat, lng] centre point around which to construct the graph.
+        the (lat, lng), [(lat, lng), (lat, lng), etc] centre points around 
+        which to construct the graph.
+    location_name : string
+        the name of the location, for reference only.
     iso_bands : list
-        default [5, 10]
+        default [5, 10].
     walk_speed : decimal
-        default 4.8 km/h which is average walking speed (400m in 5 mins)
+        default 4.8 km/h which is average walking speed (400m in 5 mins).
     iso_buffer : int
         buffer in metres used to generate isochrone around traversed 
         edges in the graph. 
