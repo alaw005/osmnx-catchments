@@ -1,13 +1,13 @@
 """ NOT WORKING DUE TO DEPENDENCIES """
 
-import osmnx as ox
 import os
 import requests
-import rasterio
+import osmnx as ox
 from osgeo import gdal
+import rasterio
 
 
-def linz_wellington_lidar_2013_14_dem_tile_names(x, 
+def list_tiles_linz_wellington_lidar_2013_14_dem(x, 
                                                  y, 
                                                  radius=1000,
                                                  layer=53591,
@@ -58,6 +58,7 @@ def linz_wellington_lidar_2013_14_dem_tile_names(x,
 
     return tiles
 
+
 def process_elevations_raster(G, 
                               tiles,
                               base_path=None,
@@ -65,7 +66,7 @@ def process_elevations_raster(G,
 
     # Specify where the DRM files are located
     if base_path is None:
-        base_path = "/content/drive/MyDrive/Colab Notebooks/porirua-linz-lidar-dem-2013-14/"
+        base_path = "/notebooks/input_data/porirua-linz-lidar-dem-2013-14/"
 
     # Specify crs of the input DEM if different from project
     if dem_crs is None:

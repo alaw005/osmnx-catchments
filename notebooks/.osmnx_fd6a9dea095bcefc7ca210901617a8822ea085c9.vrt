@@ -1,0 +1,152 @@
+<VRTDataset rasterXSize="1971" rasterYSize="2600">
+  <SRS dataAxisToSRSAxisMapping="2,1">PROJCS["NZGD2000 / New Zealand Transverse Mercator 2000",GEOGCS["NZGD2000",DATUM["New_Zealand_Geodetic_Datum_2000",SPHEROID["GRS 1980",6378137,298.257222101,AUTHORITY["EPSG","7019"]],AUTHORITY["EPSG","6167"]],PRIMEM["Greenwich",0,AUTHORITY["EPSG","8901"]],UNIT["degree",0.0174532925199433,AUTHORITY["EPSG","9122"]],AUTHORITY["EPSG","4167"]],PROJECTION["Transverse_Mercator"],PARAMETER["latitude_of_origin",0],PARAMETER["central_meridian",173],PARAMETER["scale_factor",0.9996],PARAMETER["false_easting",1600000],PARAMETER["false_northing",10000000],UNIT["metre",1,AUTHORITY["EPSG","9001"]],AXIS["Northing",NORTH],AXIS["Easting",EAST],AUTHORITY["EPSG","2193"]]</SRS>
+  <GeoTransform>  1.7536760000000000e+06,  1.0000000000000000e+00,  0.0000000000000000e+00,  5.4456000000000000e+06,  0.0000000000000000e+00, -1.0000000000000000e+00</GeoTransform>
+  <VRTRasterBand dataType="Float32" band="1">
+    <NoDataValue>-9999</NoDataValue>
+    <ColorInterp>Gray</ColorInterp>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">input_data/linz-porirua-lidar-1m-dem-2013-2014/DEM_BP31_2013_1000_4646.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="404" RasterYSize="720" DataType="Float32" BlockXSize="256" BlockYSize="256" />
+      <SrcRect xOff="0" yOff="0" xSize="404" ySize="720" />
+      <DstRect xOff="0" yOff="0" xSize="404" ySize="720" />
+      <NODATA>-9999</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">input_data/linz-porirua-lidar-1m-dem-2013-2014/DEM_BP31_2013_1000_4647.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="480" RasterYSize="720" DataType="Float32" BlockXSize="256" BlockYSize="256" />
+      <SrcRect xOff="0" yOff="0" xSize="480" ySize="720" />
+      <DstRect xOff="404" yOff="0" xSize="480" ySize="720" />
+      <NODATA>-9999</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">input_data/linz-porirua-lidar-1m-dem-2013-2014/DEM_BP31_2013_1000_4648.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="480" RasterYSize="720" DataType="Float32" BlockXSize="256" BlockYSize="256" />
+      <SrcRect xOff="0" yOff="0" xSize="480" ySize="720" />
+      <DstRect xOff="884" yOff="0" xSize="480" ySize="720" />
+      <NODATA>-9999</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">input_data/linz-porirua-lidar-1m-dem-2013-2014/DEM_BP31_2013_1000_4649.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="480" RasterYSize="720" DataType="Float32" BlockXSize="256" BlockYSize="256" />
+      <SrcRect xOff="0" yOff="0" xSize="480" ySize="720" />
+      <DstRect xOff="1364" yOff="0" xSize="480" ySize="720" />
+      <NODATA>-9999</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">input_data/linz-porirua-lidar-1m-dem-2013-2014/DEM_BP31_2013_1000_4650.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="127" RasterYSize="720" DataType="Float32" BlockXSize="256" BlockYSize="256" />
+      <SrcRect xOff="0" yOff="0" xSize="127" ySize="720" />
+      <DstRect xOff="1844" yOff="0" xSize="127" ySize="720" />
+      <NODATA>-9999</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">input_data/linz-porirua-lidar-1m-dem-2013-2014/DEM_BP31_2013_1000_4746.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="404" RasterYSize="720" DataType="Float32" BlockXSize="256" BlockYSize="256" />
+      <SrcRect xOff="0" yOff="0" xSize="404" ySize="720" />
+      <DstRect xOff="0" yOff="720" xSize="404" ySize="720" />
+      <NODATA>-9999</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">input_data/linz-porirua-lidar-1m-dem-2013-2014/DEM_BP31_2013_1000_4747.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="480" RasterYSize="720" DataType="Float32" BlockXSize="256" BlockYSize="256" />
+      <SrcRect xOff="0" yOff="0" xSize="480" ySize="720" />
+      <DstRect xOff="404" yOff="720" xSize="480" ySize="720" />
+      <NODATA>-9999</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">input_data/linz-porirua-lidar-1m-dem-2013-2014/DEM_BP31_2013_1000_4748.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="480" RasterYSize="720" DataType="Float32" BlockXSize="256" BlockYSize="256" />
+      <SrcRect xOff="0" yOff="0" xSize="480" ySize="720" />
+      <DstRect xOff="884" yOff="720" xSize="480" ySize="720" />
+      <NODATA>-9999</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">input_data/linz-porirua-lidar-1m-dem-2013-2014/DEM_BP31_2013_1000_4749.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="480" RasterYSize="720" DataType="Float32" BlockXSize="256" BlockYSize="256" />
+      <SrcRect xOff="0" yOff="0" xSize="480" ySize="720" />
+      <DstRect xOff="1364" yOff="720" xSize="480" ySize="720" />
+      <NODATA>-9999</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">input_data/linz-porirua-lidar-1m-dem-2013-2014/DEM_BP31_2013_1000_4750.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="127" RasterYSize="720" DataType="Float32" BlockXSize="256" BlockYSize="256" />
+      <SrcRect xOff="0" yOff="0" xSize="127" ySize="720" />
+      <DstRect xOff="1844" yOff="720" xSize="127" ySize="720" />
+      <NODATA>-9999</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">input_data/linz-porirua-lidar-1m-dem-2013-2014/DEM_BP31_2013_1000_4846.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="404" RasterYSize="720" DataType="Float32" BlockXSize="256" BlockYSize="256" />
+      <SrcRect xOff="0" yOff="0" xSize="404" ySize="720" />
+      <DstRect xOff="0" yOff="1440" xSize="404" ySize="720" />
+      <NODATA>-9999</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">input_data/linz-porirua-lidar-1m-dem-2013-2014/DEM_BP31_2013_1000_4847.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="480" RasterYSize="720" DataType="Float32" BlockXSize="256" BlockYSize="256" />
+      <SrcRect xOff="0" yOff="0" xSize="480" ySize="720" />
+      <DstRect xOff="404" yOff="1440" xSize="480" ySize="720" />
+      <NODATA>-9999</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">input_data/linz-porirua-lidar-1m-dem-2013-2014/DEM_BP31_2013_1000_4848.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="480" RasterYSize="720" DataType="Float32" BlockXSize="256" BlockYSize="256" />
+      <SrcRect xOff="0" yOff="0" xSize="480" ySize="720" />
+      <DstRect xOff="884" yOff="1440" xSize="480" ySize="720" />
+      <NODATA>-9999</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">input_data/linz-porirua-lidar-1m-dem-2013-2014/DEM_BP31_2013_1000_4849.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="480" RasterYSize="720" DataType="Float32" BlockXSize="256" BlockYSize="256" />
+      <SrcRect xOff="0" yOff="0" xSize="480" ySize="720" />
+      <DstRect xOff="1364" yOff="1440" xSize="480" ySize="720" />
+      <NODATA>-9999</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">input_data/linz-porirua-lidar-1m-dem-2013-2014/DEM_BP31_2013_1000_4850.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="127" RasterYSize="720" DataType="Float32" BlockXSize="256" BlockYSize="256" />
+      <SrcRect xOff="0" yOff="0" xSize="127" ySize="720" />
+      <DstRect xOff="1844" yOff="1440" xSize="127" ySize="720" />
+      <NODATA>-9999</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">input_data/linz-porirua-lidar-1m-dem-2013-2014/DEM_BP31_2013_1000_4947.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="480" RasterYSize="440" DataType="Float32" BlockXSize="256" BlockYSize="256" />
+      <SrcRect xOff="0" yOff="0" xSize="480" ySize="440" />
+      <DstRect xOff="404" yOff="2160" xSize="480" ySize="440" />
+      <NODATA>-9999</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">input_data/linz-porirua-lidar-1m-dem-2013-2014/DEM_BP31_2013_1000_4948.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="480" RasterYSize="440" DataType="Float32" BlockXSize="256" BlockYSize="256" />
+      <SrcRect xOff="0" yOff="0" xSize="480" ySize="440" />
+      <DstRect xOff="884" yOff="2160" xSize="480" ySize="440" />
+      <NODATA>-9999</NODATA>
+    </ComplexSource>
+    <ComplexSource>
+      <SourceFilename relativeToVRT="1">input_data/linz-porirua-lidar-1m-dem-2013-2014/DEM_BP31_2013_1000_4949.tif</SourceFilename>
+      <SourceBand>1</SourceBand>
+      <SourceProperties RasterXSize="480" RasterYSize="440" DataType="Float32" BlockXSize="256" BlockYSize="256" />
+      <SrcRect xOff="0" yOff="0" xSize="480" ySize="440" />
+      <DstRect xOff="1364" yOff="2160" xSize="480" ySize="440" />
+      <NODATA>-9999</NODATA>
+    </ComplexSource>
+  </VRTRasterBand>
+</VRTDataset>
