@@ -66,7 +66,7 @@ def process_elevations_raster(G,
 
     # Specify where the DRM files are located
     if base_path is None:
-        base_path = "/notebooks/input_data/porirua-linz-lidar-dem-2013-14/"
+        base_path = "notebooks/input_data/porirua-linz-lidar-dem-2013-14/"
 
     # Specify crs of the input DEM if different from project
     if dem_crs is None:
