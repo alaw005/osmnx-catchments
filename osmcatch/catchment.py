@@ -42,6 +42,9 @@ def get_iso_bands(access_points,
     network_cost = 'walk_cost'
     network_buffer = 1.1
     
+    # Convert int into list if single iso_band provided 
+    iso_bands = [iso_bands] if type(iso_bands) is int else iso_bands
+    
     # Calculate maximum network size as crow flies 
     network_extent = round(max(iso_bands) * 
                            (walk_speed * 1000 / 60) * network_buffer, 0)

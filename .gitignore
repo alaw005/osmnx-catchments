@@ -130,3 +130,6 @@ dmypy.json
 
 #overpass
 cache
+
+# osmnx
+.osmnx*

@@ -6,27 +6,30 @@ from osmcatch import elevation, catchment
 import osmnx as ox 
 import networkx as nx
 import geopandas as gpd
+from pathlib import Path
 
 # Tests
 class TestClassElevation():
     
     # Fixtures
-    access_point = (-41.2883327,174.7750865)
+    access_points = ([(-41.137575, 174.843478), (-41.13757, 174.843274), (-41.142401,174.858625)])
+    tiles = list(Path("tests/test_data").glob("DEM*.tif"))
     
-    def test_list_tiles_linz_wellington_lidar_2013_14_dem(self):
+    def test_add_elevations_to_graph(self):
         
-        tiles = elevation.list_tiles_linz_wellington_lidar_2013_14_dem(x=self.access_point[1], 
-                                                                       y=self.access_point[0])
-        assert len(tiles) > 0
-        assert 'DEM_BQ31_2013_1000_1935.tif' in tiles
+        G, iso_bands_gpd = catchment.get_iso_bands(self.access_points, 'Test access points', [5])
 
-    
-    def test_process_elevations_raster(self):
-
-        G, iso_bands_gpd = catchment.get_iso_bands([(-41.137575, 174.843478),(-41.13757, 174.843274)], 'Porirua Station')
-        tiles = elevation.list_tiles_linz_wellington_lidar_2013_14_dem(x=174.843274, y=-41.13757)
-
-        G1 = elevation.process_elevations_raster(G, tiles,
-                                               base_path = "notebooks/input_data/linz-porirua-lidar-1m-dem-2013-2014/")
+        G1 = elevation.add_elevations_to_graph(G=G, 
+                                               raster_path=self.tiles, 
+                                               raster_crs='epsg:2193')
         G2 = ox.graph_to_gdfs(G1)
+
         assert max(G2[1]['grade']) > 0
+        
+    def test_get_raster_tile_names_from_linz(self):
+      
+        tiles = elevation.get_raster_tile_names_from_linz(self.access_points,200)
+        
+        assert len(tiles) > 0
+        assert 'DEM_BP31_2013_1000_4748.tif' in tiles
+        

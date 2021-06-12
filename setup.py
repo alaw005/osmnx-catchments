@@ -27,6 +27,7 @@ setuptools.setup(
         "scikit-learn>=0.22",
         "gdal>=3.2.0",
         "rasterio>=1.2.4",
+        "shapely>=1.7.1"
     ],
     python_requires=">=3.6",
 )
