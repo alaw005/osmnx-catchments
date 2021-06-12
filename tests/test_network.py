@@ -4,6 +4,8 @@ import pytest
 
 from osmcatch import network
 import networkx as nx
+import geopandas as gpd
+
 
 # Tests
 class TestClassNetwork():
@@ -29,3 +31,11 @@ class TestClassNetwork():
         G4 = network.get_osm_walk_network(self.access_point, self.dist, snapshot_date="2020-06-01T12:00:00Z")
         assert G3.size() != G4.size()
 
+    def test_get_local_authority_boundary(self):
+        geom, tla =  network.get_local_authority_boundary(self.access_point)
+        assert type(geom) == gpd.geoseries.GeoSeries
+        assert tla == 'Wellington City'
+        
+    def test_test_get_osm_walk_network_local_authority_boundary(self):
+        # TODO
+        pass
