@@ -27,7 +27,7 @@ def get_osm_walk_network(centre_point,
         graph.
     snapshot_date : string
         download OSM as at the date specified. Must be in the format 
-        '[date:"YYYY-MM-DDTHH:MM:SSZ"]'
+        "YYYY-MM-DDTHH:MM:SSZ"
     to_crs : string or pyproj.CRS
         the coordinate reference system to use, e.g. 'epsg:4326', if None use 
         the osmnx default.
