@@ -8,6 +8,34 @@ import json
 from shapely.geometry import shape
 import geopandas as gpd
 
+class WalkNetwork:
+    """Class for walk network"""
+    
+    _G = nx.classes.multidigraph.MultiDiGraph
+    _nodes = nx.classes.reportviews.NodeView
+    _edges = nx.classes.reportviews.EdgeView
+    
+    def __init__(self, G):
+        assert type(G) == nx.classes.multidigraph.MultiDiGraph
+        self._G = G
+        self._nodes, self._edges = ox.graph_to_gdfs(G)
+    
+    @property
+    def graph(self):
+        return self._G
+    
+    @property
+    def nodes(self):
+        return self._nodes
+    
+    @property
+    def edges(self):
+        return self._edges
+ 
+    def plot_graph(self, **kwargs):
+        ox.plot_graph(self._G, **kwargs)
+    
+
 def get_osm_walk_network(centre_point, 
                          dist=1000, 
                          snapshot_date=None, 
