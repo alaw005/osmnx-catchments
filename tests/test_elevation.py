@@ -35,9 +35,10 @@ class TestClassElevation():
     
     def test_gradient_adjusted_walk_speed(self):
         
-        gradients = [0, 0.2, 0.4, 0.6, 0.8, 1.0]
-        expected_speeds = [0, 1, 2, 3, 4, 5]
+        gradients = [-100, -50, -20, -5, 0, 5, 20, 50, 100]
+        expected_speeds = [0.51, 0.82, 1.38, 1.5, 1.49, 1.45, 1.21, 0.69, 0.5]
         
         speeds = elevation.gradient_adjusted_walk_speed(gradients)
+        speeds = [round(s,2) for s in speeds]
         assert speeds == expected_speeds
         
