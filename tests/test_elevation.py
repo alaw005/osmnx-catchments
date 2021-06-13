@@ -32,4 +32,12 @@ class TestClassElevation():
         
         assert len(tiles) > 0
         assert 'DEM_BP31_2013_1000_4748.tif' in tiles
+    
+    def test_gradient_adjusted_walk_speed(self):
+        
+        gradients = [0, 0.2, 0.4, 0.6, 0.8, 1.0]
+        expected_speeds = [0, 1, 2, 3, 4, 5]
+        
+        speeds = elevation.gradient_adjusted_walk_speed(gradients)
+        assert speeds == expected_speeds
         

@@ -7,6 +7,29 @@ from osgeo import gdal
 import rasterio
 
 
+def gradient_adjusted_walk_speed(gradients, standard_speed=5):
+    """  
+    Returns a standard walk speed adjusted for gradient 
+    
+    Parameters
+    ----------
+    gradients : list or series
+        list or series of gradients, as a percentage i.e. rise over run.
+    standard_speed : decimal
+        standard walk speed that will be adjusted by gradient, default 4.8km/h. 
+        
+    Returns
+    -------
+    speed : List of decimal
+        list of speeds adjusted by slope
+    """
+
+    # Simple calculation to get things started
+    speed = [abs(standard_speed * g) for g in gradients]
+    
+    return speed
+
+
 def add_elevations_to_graph(G, 
                           raster_path, 
                           raster_crs=None):

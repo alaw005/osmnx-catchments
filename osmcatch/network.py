@@ -9,7 +9,7 @@ from shapely.geometry import shape
 import geopandas as gpd
 
 class WalkNetwork:
-    """Class for walk network"""
+    """Convenience class for walk network"""
     
     _G = nx.classes.multidigraph.MultiDiGraph
     _nodes = nx.classes.reportviews.NodeView
@@ -31,8 +31,13 @@ class WalkNetwork:
     @property
     def edges(self):
         return self._edges
+    
+    @property
+    def edge_slope(self):
+        return self._edges['grade']
  
     def plot_graph(self, **kwargs):
+        """Convenience method to plot graph using osmnx"""
         ox.plot_graph(self._G, **kwargs)
     
 
