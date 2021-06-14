@@ -3,6 +3,8 @@
 import osmnx as ox
 import networkx as nx
 import geopandas as gpd
+from osmcatch import network
+import matplotlib.pyplot as plt
 
 from . import network
 
@@ -96,3 +98,35 @@ def get_iso_bands(access_points,
     iso_bands_gpd = gpd.GeoDataFrame(iso_group, crs=buffer.crs)
  
     return G, iso_bands_gpd
+
+
+def compare_slope_vs_flat(access_points, 
+                          location_name, 
+                          walk, 
+                          flat_walk_speed=1.4862):
+    """
+    Compare slope vs flat walk speed assumptions
+    """
+    # Generate catchment based on 
+    slope = walk.iso_bands(access_points = access_points, 
+                           location_name = location_name, 
+                           iso_bands=[5,10])
+    flat = walk.iso_bands(access_points = access_points,
+                          location_name = location_name,
+                          iso_band_cost='length',
+                          iso_bands=[5*60*1.5,10*60*flat_walk_speed])
+
+    # Get total distance
+    slope_dist = network.graph_street_length(slope[slope['iso_band_mins']==10]['iso_band_graph'][0])
+    flat_dist = network.graph_street_length(flat[flat['iso_band_mins']==10*60*flat_walk_speed]['iso_band_graph'][0])
+
+    # Plot catchment
+    fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(16, 8))
+
+    _ = ax1.set_title('distance on flat (m)')
+    _ = ax2.set_title('distance with slope (m)')
+
+    p = walk.plot_iso_bands(flat, ax1, show=False, close=False)
+    p = walk.plot_iso_bands(slope, ax2)
+
+    print("flat: {}m, slope: {}m, diff: {}%".format(int(flat_dist), int(slope_dist), round((1-flat_dist/slope_dist)*100,2)))
